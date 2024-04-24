@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.ralewayFont{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.bold{
+    font-weight: 700;
+}
+.logoSize{
+    width: 40px;
+}
