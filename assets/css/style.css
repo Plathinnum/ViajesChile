@@ -15,3 +15,10 @@
 .logoSize{
     width: 40px;
 }
+.navSuper{
+    z-index: 1000;
+}
+.fitCard{
+    object-fit: cover;
+    height: 100%;
+}
