@@ -14,8 +14,8 @@
 <body>
     <div class="ralewayFont text-white bg-black">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container col-12 col-md-8">
                     <a class="navbar-brand text-white" href="index.html">
                         <img src="assets/img/viajes.svg" class="logoSize" alt="Logo de Viajes Chile">
                         Viajes Chile
@@ -43,7 +43,7 @@
                 </div>
             </nav>
         </header>
-        <!-- Carrusel con las iágenes correspondientes -->
+        <!-- Carrusel con las imágenes correspondientes -->
         <div id="backgroundCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -72,7 +72,7 @@
                 </div>
                 <div class="row col-12 col-md-8 d-flex justify-content-between">
                     <div class="col-12 col-md-4">
-                        <div class="bg-info d-flex justify-content-center">
+                        <div id="flight" class="bg-info d-flex justify-content-center" data-bs-tooltip-bg="#0dcaf0">
                             <span><i class="fa-solid fa-plane fa-lg"></i></span>
                         </div>
                         <div>
@@ -83,12 +83,12 @@
                         <div>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae a incidunt delectus ea esse. Voluptatum sint explicabo eligendi tempora, voluptates nihil, rem non deleniti, animi ipsam id esse excepturi nulla.Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis iure, assumenda pariatur quibusdam amet tenetur cumque similique dolor magni iste atque, nisi autem consectetur obcaecati corrupti omnis, necessitatibus soluta!
                         </div>
-                        <div class="bg-info d-flex justify-content-center">
+                        <div id="explore" class="bg-info d-flex justify-content-center">
                             <span><i class="fa-solid fa-mountain fa-lg"></i></span>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
-                        <div class="bg-info d-flex justify-content-center">
+                        <div id="arrive" class="bg-info d-flex justify-content-center">
                             <span><i class="fa-solid fa-route fa-lg"></i></span>
                         </div>
                         <div>
@@ -152,7 +152,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="subject" class="form-label">Asunto</label>
-                            <input type="email" class="form-control light fontColor3" id="subject">
+                            <input type="text" class="form-control light fontColor3" id="subject">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensaje</label>
@@ -164,6 +164,34 @@
                     </form>
                 </div>
             </div>
+            <!-- Modal que se mostrará cuando se aprete el botón del formulario-->
+            <div class="modal fade text-black" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h5 class="modal-title fw-bolder" id="exampleModalLabel">Tu mensaje fue enviado con éxito</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex">
+                                <p class="fw-bold mb-0 me-1">Nombre:</p>
+                                <p id="modalName"></p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fw-bold mb-0 me-1">Asunto:</p>
+                                <p id="modalSubject"></p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="fw-bold mb-0 me-1">Mensaje:</p>
+                                <p id="modalMessage"></p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info text-white" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer>
             <div class="row justify-content-center py-4 bg-info">
@@ -173,7 +201,7 @@
                             <h5>VIAJES CHILE</h5>
                         </div>
                         <div>
-                            <a href="https://github.com/" target="_blank" class="text-white">
+                            <a href="https://github.com/Plathinnum/ViajesChile/" target="_blank" class="text-white">
                                 <i class="fa-brands fa-github-square fa-2xl me-3"></i>
                             </a>
                             <a href="https://es-la.facebook.com/" target="_blank" class="text-white">

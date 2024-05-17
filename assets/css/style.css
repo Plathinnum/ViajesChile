@@ -21,13 +21,14 @@ html{
 .logoSize{
     width: 40px;
 }
-/* .navSuper{
-    z-index: 1000;
-} */
 .fitCard{
     object-fit: cover;
     height: 140px;
 }
 a{
     text-decoration: none;
+}
+.tooltip-inner{
+    background-color: white;
+    color: black;
 }
