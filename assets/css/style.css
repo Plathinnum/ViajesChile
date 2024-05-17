@@ -21,6 +21,7 @@ html{
 .logoSize{
     width: 40px;
 }
+/* Acá se modifica la imagen de las cards para que sean todas de la misma altura */
 .fitCard{
     object-fit: cover;
     height: 140px;
@@ -28,6 +29,7 @@ html{
 a{
     text-decoration: none;
 }
+/* Se cambia el color de fondo y fuente de los tooltips */
 .tooltip-inner{
     background-color: white;
     color: black;

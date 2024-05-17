@@ -19,7 +19,7 @@ $(document).ready(function(){
         //Mostrar el modal
         $('#myModal').modal('show');
     });
-
+    
     //Se agregan tooltips a los íconos de la sección "Quiénes somos"
     $("#flight").hover(function(){
         $(this).tooltip({
